@@ -29,19 +29,19 @@ public class Bank {
             choice = Integer.parseInt(scanner.nextLine());
 
             if (choice == 1) {
-                // Module 1: Account Management
+                //Account Management
                 createAccount();
             } else if (choice == 2) {
-                // Module 2: Deposit Money in the accuont
+                // Deposit Money in the accuont
                 depositMoney();
             } else if (choice == 3) {
-                // Module 3: Withdraw Money in the accuont
+                // Withdraw Money in the accuont
                 withdrawMoney();
             } else if (choice == 4) {
-                // Module 4: Check the current balance in the account
+                // Check the current balance in the account
                 checkBalance();
             } else if (choice == 5) {
-                // Module 5: Shows all the accounts in the bank along with their details
+                // Shows all the accounts in the bank along with their details
                 showAllAccounts();
             } else if (choice == 6) {
                 System.out.println("Thank you for using the Bank Management System.");
@@ -62,6 +62,7 @@ public class Bank {
         return -1;
     }
 
+    // MODULE 1
     // Creates a new bank account
     static void createAccount() {
         System.out.print("Enter account number: ");
@@ -86,6 +87,8 @@ public class Bank {
 
         System.out.println("Account created successfully.");
     }
+
+    // MODULE 2
     // Deposits money into existing account
     static void depositMoney() {
         System.out.print("Enter account number: ");
@@ -132,6 +135,7 @@ public class Bank {
         System.out.println("Withdrawal successful. New balance: " + newBalance);
     }
 
+    // MODULE 3
     // Displays the current bank balance of an account
     static void checkBalance() {
         System.out.print("Enter account number: ");
